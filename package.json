@@ -15,11 +15,11 @@
   "files": [
     "dist"
   ],
-  "//DISABLED//main": "./dist/solid-form-validation.umd.cjs",
+  "////DISABLED//main": "./dist/solid-form-validation.umd.cjs",
   "module": "./dist/solid-form-validation.js",
   "exports": {
     ".": {
-      "//DISABLED//require": "./dist/solid-form-validation.umd.cjs",
+      "////DISABLED//require": "./dist/solid-form-validation.umd.cjs",
       "import": "./dist/solid-form-validation.js"
     }
   },

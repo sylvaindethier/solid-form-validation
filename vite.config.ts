@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
+//@ts-expect-error No declaration file
 import eslint from "vite-plugin-eslint";
-import solid from 'vite-plugin-solid'
-import dts from "vite-plugin-dts"
+import solid from "vite-plugin-solid";
+import dts from "vite-plugin-dts";
 import { resolve } from "node:path";
 
 export default defineConfig({
@@ -25,8 +26,8 @@ export default defineConfig({
       external: ["solid-js", "@solidjs/router"],
       output: {
         // Provides global variables to use in the UMD build
-        globals: {}
-      }
-    }
-  }
-})
+        globals: {},
+      },
+    },
+  },
+});

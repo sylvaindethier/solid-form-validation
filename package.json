@@ -1,0 +1,66 @@
+{
+  "name": "solid-form-validation",
+  "version": "0.1.0",
+  "description": "SolidJS form validation built on top of Web standard API and Typescript",
+  "keywords": [
+    "Solid",
+    "SolidJS",
+    "form",
+    "validation",
+    "form validation",
+    "TypeScript",
+    "Web standard API"
+  ],
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "//DISABLED//main": "./dist/solid-form-validation.umd.cjs",
+  "module": "./dist/solid-form-validation.js",
+  "exports": {
+    ".": {
+      "//DISABLED//require": "./dist/solid-form-validation.umd.cjs",
+      "import": "./dist/solid-form-validation.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sylvain Dethier",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sylvaindethier/solid-form-validation.git"
+  },
+  "homepage": "https://github.com/sylvaindethier/solid-form-validation#readme",
+  "bugs": {
+    "url": "https://github.com/sylvaindethier/solid-form-validation/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "imports": {
+    "#src/*": "./src/*",
+    "#lib/*": "./lib/*"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.13.2",
+    "solid-js": "^1.8.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-solid": "^0.14.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vite-plugin-dts": "^3.9.0",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}

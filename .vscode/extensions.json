@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "aaron-bond.better-comments",
+    "usernamehw.errorlens",
+    "wayou.vscode-todo-highlight",
+    "streetsidesoftware.code-spell-checker",
+    "dbaeumer.vscode-eslint",
+    "yzhang.markdown-all-in-one",
+    "DavidAnson.vscode-markdownlint",
+    "christian-kohler.npm-intellisense",
+    "esbenp.prettier-vscode",
+    "vscode.html-language-features",
+    "YoavBls.pretty-ts-errors",
+    "meganrogge.template-string-converter",
+    "PKief.material-icon-theme"
+  ]
+}

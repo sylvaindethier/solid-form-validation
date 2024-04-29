@@ -10,24 +10,25 @@ export default defineConfig({
     eslint(),
     solid(),
     dts({
-      // Merge declaration files
-      rollupTypes: true,
+      exclude: ["node_modules", "src/app", "src/demo"],
+      include: "src/lib",
+      insertTypesEntry: true,
+      copyDtsFiles: true,
     }),
   ],
   build: {
+    // sourcemap: true,
+    // minify: false,
+    /* Removes public dir from bundle */
+    copyPublicDir: false,
     lib: {
-      entry: resolve(import.meta.dirname, "lib/index.ts"),
-      name: "solid-form-validation",
-      fileName: "solid-form-validation",
+      entry: resolve(import.meta.dirname, "src/lib/index.ts"),
       formats: ["es"],
+      fileName: "index",
     },
     rollupOptions: {
-      // Discard "solid-js" & "@solidjs/router" from bundle
+      /* Discard "solid-js" & "@solidjs/router" from bundle */
       external: ["solid-js", "@solidjs/router"],
-      output: {
-        // Provides global variables to use in the UMD build
-        globals: {},
-      },
     },
   },
 });

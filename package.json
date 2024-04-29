@@ -2,6 +2,17 @@
   "name": "solid-form-validation",
   "version": "0.1.0",
   "description": "SolidJS form validation built on top of Web standard API and Typescript",
+  "author": "Sylvain Dethier",
+  "contributors": [],
+  "license": "MIT",
+  "homepage": "https://github.com/sylvaindethier/solid-form-validation#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sylvaindethier/solid-form-validation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sylvaindethier/solid-form-validation/issues"
+  },
   "keywords": [
     "Solid",
     "SolidJS",
@@ -12,39 +23,33 @@
     "Web standard API"
   ],
   "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
-  "////DISABLED//main": "./dist/solid-form-validation.umd.cjs",
-  "module": "./dist/solid-form-validation.js",
-  "exports": {
-    ".": {
-      "////DISABLED//require": "./dist/solid-form-validation.umd.cjs",
-      "import": "./dist/solid-form-validation.js"
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Sylvain Dethier",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sylvaindethier/solid-form-validation.git"
-  },
-  "homepage": "https://github.com/sylvaindethier/solid-form-validation#readme",
-  "bugs": {
-    "url": "https://github.com/sylvaindethier/solid-form-validation/issues"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "pnpm run build"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "imports": {
-    "#src/*": "./src/*",
-    "#lib/*": "./lib/*"
+    "#app/*": "./src/app/*",
+    "#demo/*": "./src/demo/*",
+    "#lib/*": "./src/lib/*"
   },
   "dependencies": {
     "@solidjs/router": "^0.13.2",
@@ -62,5 +67,8 @@
     "vite-plugin-dts": "^3.9.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-solid": "^2.10.2"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.8.17"
   }
 }

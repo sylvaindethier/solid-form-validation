@@ -15,6 +15,7 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "solid", "jsx-a11y"],
+  "ignorePatterns": ["dist"],
   "rules": {
     "indent": ["error", 2],
     "linebreak-style": ["error", "unix"],

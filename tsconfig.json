@@ -22,12 +22,15 @@
     "noFallthroughCasesInSwitch": true,
 
     /* Alias */
+    "baseUrl": ".",
     "paths": {
-      "#src/*": ["./src/*"],
-      "#lib/*": ["./lib/*"]
+      "#app/*": ["src/app/*"],
+      "#demo/*": ["src/demo/*"],
+      "#lib/*": ["src/lib/*"]
     },
-    "resolvePackageJsonImports": true
+    "resolvePackageJsonImports": true,
+    "outDir": "dist"
   },
-  "include": ["src"],
+  "include": ["src", "*.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

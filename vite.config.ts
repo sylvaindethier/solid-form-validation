@@ -10,7 +10,7 @@ export default defineConfig({
     eslint(),
     solid(),
     dts({
-      // merge declaration files
+      // Merge declaration files
       rollupTypes: true,
     }),
   ],
@@ -22,7 +22,7 @@ export default defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      // discard "solid-js" & "@solidjs/router" from bundle
+      // Discard "solid-js" & "@solidjs/router" from bundle
       external: ["solid-js", "@solidjs/router"],
       output: {
         // Provides global variables to use in the UMD build

@@ -1,0 +1,22 @@
+form {
+  text-align: start;
+  max-width: 80ch;
+  font-size: 110%;
+}
+code {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.field {
+  margin-block: 1em;
+}
+.info {
+  font-style: italic;
+  color: deepskyblue;
+  margin-block-end: 0.5em;
+}
+.info::before {
+  content: "⚠️";
+  display: inline;
+  padding-inline-end: 0.25em;
+}

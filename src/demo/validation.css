@@ -1,0 +1,63 @@
+form {
+  --color-valid: lightgreen;
+  --color-invalid: red;
+  --space: 0.5em;
+}
+
+form label {
+  padding-inline-end: var(--space);
+}
+/* label marked with "*" for required input */
+form label:has(+ input:required)::after {
+  content: "*";
+  display: inline;
+  /* padding-inline-end: var(--space); */
+  color: var(--color-invalid);
+  font-weight: bold;
+}
+/* input validity */
+form input + span::before {
+  content: "";
+  display: inline;
+  padding-inline: var(--space);
+  vertical-align: middle;
+}
+form input:valid {
+  box-shadow: 0px 0px 1px 1px var(--color-valid);
+}
+form input:valid + span::before {
+  content: "✓";
+  color: var(--color-valid);
+}
+form input:invalid {
+  box-shadow: 0px 0px 2px 2px var(--color-invalid);
+}
+form input:invalid + span::before {
+  content: "✕";
+  color: var(--color-invalid);
+}
+
+form .validation-message {
+  color: var(--color-invalid);
+}
+
+/* form button[type="submit"] {
+  &::after {
+    content: "";
+    font-weight: bold;
+    display: inline-block;
+    margin-inline-start: var(--space);
+  }
+
+  &[data-pending="true"]::after {
+    content: "↺";
+    color: var(--color-valid);
+  }
+}
+form:invalid button[type="submit"],
+form button[type="submit"][data-error="true"] {
+  &::after {
+    content: "✕";
+    color: var(--color-invalid);
+  }
+} */

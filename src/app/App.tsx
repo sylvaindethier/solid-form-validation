@@ -1,7 +1,7 @@
 import type { Component } from "solid-js";
 import { Router } from "@solidjs/router";
 import type { RouteSectionProps } from "@solidjs/router";
-import { routes } from "./routes";
+import { routes } from "./routes/routes";
 import { AppLayout } from "./AppLayout";
 
 const Root: Component<RouteSectionProps> = (props) => (

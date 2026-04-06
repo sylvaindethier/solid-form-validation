@@ -63,7 +63,7 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-solid": "^0.14.0",
     "typescript": "^5.4.5",
-    "vite": "^5.2.10",
+    "vite": "^6.4.2",
     "vite-plugin-dts": "^3.9.0",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-solid": "^2.10.2"
